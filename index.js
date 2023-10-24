@@ -15,7 +15,7 @@ app.use("/api/auth", userRoutes);
 app.use("/api/message", messageRoute);
 
 //mongoose connection
-mongoose.connect(process.env.MONGO_URL, {
+mongoose.connect("mongodb+srv://nguyenducde:lalanganhaivip1@cluster0.m0jj83n.mongodb.net/shopping?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
     }).then(() => {
